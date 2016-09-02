@@ -295,8 +295,8 @@
 			from : now.toISOString().substring(0, 10),
 			to : end.toISOString().substring(0, 10),
 			monthFullLabels : [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
-			fullSelection : true,
-			dragEnabled : true,
+			colorMode : true,
+			selectionMode : true,
 			change : function() {
 			},
 		}, opt);
@@ -501,7 +501,7 @@
 					var $cell = $area.find("[data-date='" + expr + "']");
 					$cell.addClass("selected start end");
 				} else {
-					if (me.opt.fullSelection) {
+					if (me.opt.colorMode) {
 						for (var i = 0; i <= diff; i++) {
 							var d = addDays(d1, i);
 							var lcDate = new Date(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 0, 0, 0, 0);
@@ -620,7 +620,7 @@
 					} else {
 						$wd.attr("data-date", lcDate.toISOString().substring(0, 10));
 
-						if (me.opt.dragEnabled) {
+						if (me.opt.selectionMode) {
 							$wd.on("mousedown", function(ev) {
 								if (!$down) {
 									$down = $(this);
@@ -685,7 +685,7 @@
 					}
 				})();
 			}
-			if (me.opt.dragEnabled) {
+			if (me.opt.selectionMode) {
 				$grid.on("touchstart", function(ev) {
 					var $target = $(ev.target || ev.srcElement);
 					if ($target.prop("tagName") === "SPAN")
