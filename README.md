@@ -1,7 +1,9 @@
 # jquery.mdatepicker.js
+
 ==============
+
 The Date Range Picker component in your application will help users set a period from the pop-up menu. The common data range picker provides users with a very small horizantal scroll view so it is painful to set the data range on the small window. With this new data range picker, all the work gets done easily. It not only gives a bigger view but also an intuitive UI. Just add Data Ranger Picker, then a textbox pops up. Move the cursor to the text box to activate, and a calendar to select the start/end date appears. A bigger size calendar with vertical scroll view will come out soon.
-==============
+
 
 ##Example
 
