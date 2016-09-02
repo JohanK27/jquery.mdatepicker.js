@@ -34,8 +34,8 @@ $("#datepicker2").mdaterangepicker({
 
 
 ##Properties
-* RangeFrom : The start date of date range(date format : yyyy-mm-dd). The default value is the current date.
-* RangeTo : The end date of data range(date format : yyyy-mm-dd). The default value is 2 years after the current date
+* From : The start date of date range(date format : yyyy-mm-dd). The default value is the current date.
+* To : The end date of data range(date format : yyyy-mm-dd). The default value is 2 years after the current date
 * SelectionFrom : set the start date
 * SelectionTo : set the end date
 * ColorMode : fill the selected data range in background color
