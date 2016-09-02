@@ -1,0 +1,195 @@
+body>.mdatepicker {
+	font-size: 14px;
+	color: #636363;
+	-webkit-user-select: none;
+	user-select: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 900;
+	background-color: #fff;
+}
+
+.mdatepicker>div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.mdatepicker * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mdatepicker button:hover {
+	opacity: 0.7;
+}
+
+.mdatepicker button:active {
+	opacity: 0.7;
+}
+
+.mdatepicker button.close {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 50px;
+	background-color: transparent;
+	outline: none;
+	-webkit-appearance: none;
+	border: 0;
+	background-image: url(button_close.png);
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mdatepicker button.reset {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 50px;
+	background-color: transparent;
+	outline: none;
+	-webkit-appearance: none;
+	border: 0;
+	font-size: 14px;
+	color: #777;
+	height: 100%;
+}
+
+.mdatepicker button.submit {
+	-webkit-appearance: none;
+	outline: none;
+	border: 0;
+	outline: none;
+	border-radius: 20px;
+	color: #fff;
+	background-color: #00a699;
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	height: 38px;
+}
+
+.mdatepicker .hdr {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 88px;
+}
+
+.mdatepicker .hdr1 {
+	height: 44px;
+	font-size: 18px;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+}
+
+.mdatepicker .hdr1 div {
+	margin: auto;
+	background-image: url(bar.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 24px 16px;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.mdatepicker .hdr1 span {
+	margin: auto 15px;
+	display: inline-block;
+	min-width: 50px;
+}
+
+.mdatepicker .hdr3 {
+	height: 44px;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 1px solid #efefef;
+}
+
+.mdatepicker .day {
+	height: 100%;
+	width: 14.2857%;
+	display: -webkit-flex;
+	display: flex;
+	min-height: 38px;
+}
+
+.mdatepicker .area .day {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.mdatepicker .day.disabled {
+	color: #aaa;
+}
+
+.mdatepicker .day.today {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.mdatepicker .day.selected {
+	background-color: #00a699;
+	color: #fff;
+}
+
+.mdatepicker .day.selected.start {
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+}
+
+.mdatepicker .day.selected.end {
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+.mdatepicker .day span {
+	margin: auto;
+}
+
+.mdatepicker .area {
+	position: absolute;
+	top: 88px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.mdatepicker .area .month {
+	font-size: 16px;
+	padding-left: 10px;
+	padding-top: 4px;
+	font-weight: bold;
+	padding-top: 4px;
+}
+
+.mdatepicker .area .grid {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #efefef;
+}
+
+@media only screen and (min-width: 768px) {
+	body>.mdatepicker {
+		font-size: 18px;
+		top: 30%;
+		bottom: 5px;
+		right: 200px;
+		left: 200px;
+		border: 1px solid #888;
+		z-index: 900;
+		bottom: 5px;
+	}
+}
